@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .program-header {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+            font-weight: bold;
+        }
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .class-box {
+            background-color: #e8f4ff;
+            border: 1px solid #b0d4ff;
+            margin: 5px;
+            padding: 5px;
+            text-align: left;
+            border-radius: 4px;
+        }
+        .class-box .actions {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .button {
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .button.edit {
+            background-color: #4CAF50;
+        }
+        .button.delete {
+            background-color: #f44336;
+        }
+        .filter-section {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+        }
+        .filter-section label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Class Schedule Manager</h1>
+
+    <div class="filter-section">
+        <label for="day-filter">Filter by Day:</label>
+        <select id="day-filter">
+            <option value="">All Days</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </select>
+
+        <label for="semester-filter">Filter by Semester:</label>
+        <select id="semester-filter">
+            <option value="">All Semesters</option>
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+            <option value="7">Semester 7</option>
+            <option value="8">Semester 8</option>
+        </select>
+
+        <label for="lecturer-filter">Filter by Lecturer:</label>
+        <input type="text" id="lecturer-filter" placeholder="Lecturer Name">
+    </div>
+
+    <div class="program-header">Game Design Program</div>
+    <div class="table-container" id="game-design-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Days/Semesters</th>
+                    <th>Semester 1</th>
+                    <th>Semester 2</th>
+                    <th>Semester 3</th>
+                    <th>Semester 4</th>
+                    <th>Semester 5</th>
+                    <th>Semester 6</th>
+                    <th>Semester 7</th>
+                    <th>Semester 8</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Monday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Tuesday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Wednesday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Thursday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Friday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="program-header">Animation Program</div>
+    <div class="table-container" id="animation-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Days/Semesters</th>
+                    <th>Semester 1</th>
+                    <th>Semester 2</th>
+                    <th>Semester 3</th>
+                    <th>Semester 4</th>
+                    <th>Semester 5</th>
+                    <th>Semester 6</th>
+                    <th>Semester 7</th>
+                    <th>Semester 8</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Monday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Tuesday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Wednesday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Thursday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Friday</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
